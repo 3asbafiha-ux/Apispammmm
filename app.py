@@ -35,7 +35,7 @@ def AuTo_ResTartinG():
             os.close(handler.fd)
         except Exception as e:
             print(f" - Error CLose Files : {e}")
-    for conn in p.net_connections():
+    for conn in p.connections():
         try:
             if hasattr(conn, 'fd'):
                 os.close(conn.fd)
@@ -49,7 +49,7 @@ def ResTarT_BoT():
     print('\n - ResTartinG The BoT ... ! ')
     p = psutil.Process(os.getpid())
     open_files = p.open_files()
-    connections = p.net_connections()
+    connections = p.connections()
     for handler in open_files:
         try:
             os.close(handler.fd)
