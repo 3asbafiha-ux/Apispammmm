@@ -6,4 +6,5 @@ google
 protobuf
 pycryptodome
 protobuf_decoder
+psutil==5.9.8
 gunicorn
