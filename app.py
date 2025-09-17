@@ -491,7 +491,7 @@ def health_api():
 
 def run_flask_app():
     """تشغيل تطبيق Flask"""
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False)
 
 def StarT_SerVer():
     """الدالة الرئيسية لبدء تشغيل جميع الحسابات وخادم API"""
