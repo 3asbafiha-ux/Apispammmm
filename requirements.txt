@@ -5,3 +5,4 @@ PyJWT>=2.8
 protobuf>=4.25
 googleapis-common-protos>=1.63
 gunicorn>=21.2
+pycryptodome
